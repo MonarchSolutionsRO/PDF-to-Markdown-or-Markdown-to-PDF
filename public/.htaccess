@@ -5,6 +5,9 @@
 
     RewriteEngine On
 
+    # Add X-Robots-Tag header
+    Header set X-Robots-Tag "index, follow"
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>PDF.MD - Free Markdown and PDF Converter</title>
-    <meta name="description" content="Transform your Markdown documents into professionally formatted PDFs with PDF.MD. Create beautiful, consistent documents with just a few clicks. Free, No Sign Up">
+    <meta name="description" content="Transform your Markdown documents into professionally formatted PDF with PDF.MD. Create beautiful documents with just a few clicks. Free, No Sign Up">
+     
     
+    <!-- SEO Tags -->
+           <link rel="canonical" href="{{ url()->current() }}" />
+        <meta name="robots" content="index, follow">
+        
+        <!-- Hreflang Tags - Add more languages as needed -->
+        <link rel="alternate" hreflang="x-default" href="{{ config('app.url') }}" />
+        <link rel="alternate" hreflang="en" href="{{ config('app.url') }}" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />

@@ -13,6 +13,6 @@ class App extends Component
 
     public function render()
     {
-        return view('layouts.app');  // Changed from 'components.layouts.app'
+        return view('components.layouts.app');  // Change to match the actual view path
     }
 }

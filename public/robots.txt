@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
 Sitemap: https://pdf.md/sitemap.xml

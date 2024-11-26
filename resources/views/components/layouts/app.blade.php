@@ -24,6 +24,8 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    <x-google-ads />
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KMJ4PM10XQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];

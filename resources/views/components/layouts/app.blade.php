@@ -7,6 +7,7 @@
     <title>PDF.MD - Free Markdown and PDF Converter</title>
     <meta name="description" content="Transform your Markdown documents into professionally formatted PDF with PDF.MD. Create beautiful documents with just a few clicks. Free, No Sign Up">
      
+
     
     <!-- SEO Tags -->
            <link rel="canonical" href="{{ url()->current() }}" />
@@ -22,6 +23,15 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KMJ4PM10XQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KMJ4PM10XQ'); // Replace with your GA4 measurement ID
+  </script>
+
 </head>
 <body class="font-sans antialiased bg-gray-50 min-h-screen flex flex-col">
     <main class="flex-grow">

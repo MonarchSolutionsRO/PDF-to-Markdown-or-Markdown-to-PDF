@@ -66,7 +66,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <!-- Left Column: Markdown Input -->
             <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-                <form action="{{ route('markdown.convert') }}" method="POST" class="space-y-6">
+                <form action="{{ route('markdown.convert') }}" method="POST" class="space-y-6" id="pdfForm">
                     @csrf
                     <div>
                         <label for="markdown" class="block text-lg font-semibold text-gray-900 mb-4">

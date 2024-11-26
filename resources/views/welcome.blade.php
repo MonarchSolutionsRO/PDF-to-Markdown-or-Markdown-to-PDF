@@ -1,23 +1,71 @@
 <x-layouts.app>
-    
-    <!-- Hero Section -->
-    <div class="relative isolate overflow-hidden">
-    <x-header />
-        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
-        </div>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free PDF & Markdown Converter | Convert MD to PDF & PDF to MD Online</title>
 
-        <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
-            <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
-                <h1 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    Convert Documents with Ease
-                </h1>
-                <p class="mt-6 text-lg leading-8 text-gray-600">
-                    Free, secure, and lightning-fast document conversion between PDF and Markdown formats. No sign-up required.
-                </p>
-            </div>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Free online tool to convert between PDF and Markdown formats. Transform MD to PDF, PDF to MD, and extract text with perfect formatting. No registration required, secure, and instant conversion.">
+    <meta name="keywords" content="md to pdf converter, pdf to md converter, markdown to pdf online, pdf to markdown online, convert markdown to pdf, convert pdf to markdown, github markdown converter, free pdf converter, markdown editor online, mdx to pdf converter, pdf text extractor, markdown formatting">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Free PDF & Markdown Converter | MD to PDF & PDF to MD">
+    <meta property="og:description" content="Transform your documents between PDF and Markdown formats instantly. Free online converter with no sign-up required. Support for GitHub-flavored markdown.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('images/converter-preview.png') }}">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free PDF & Markdown Converter">
+    <meta name="twitter:description" content="Professional PDF and Markdown converter. Transform documents between PDF and MD formats with perfect formatting. Free, secure, and no registration needed.">
+    <meta name="twitter:image" content="{{ asset('images/converter-preview.png') }}">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "PDF and Markdown Converter",
+        "description": "Free online tool to convert between PDF and Markdown formats",
+        "url": "{{ url()->current() }}",
+        "applicationCategory": "DocumentConverter",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Convert MD to PDF",
+            "Convert PDF to MD",
+            "GitHub Flavored Markdown Support",
+            "Custom Styling Options",
+            "Instant Preview",
+            "No Registration Required"
+        ]
+    }
+    </script>
+</head>
+
+<!-- Keep existing body content but update the hero section text -->
+<div class="relative isolate overflow-hidden">
+    <x-header />
+    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+        <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
+            <h1 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                Convert Between PDF and Markdown
+            </h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+                Free online converter for PDF and Markdown documents. Transform MD to PDF or PDF to MD instantly. No registration needed, secure, and lightning-fast.
+            </p>
         </div>
     </div>
+</div>
+
 
     <!-- Conversion Options -->
     <div class="mx-auto max-w-7xl px-6 lg:px-8 -mt-20">
